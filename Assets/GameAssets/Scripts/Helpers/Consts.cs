@@ -12,4 +12,8 @@ public class Consts
         public const string HOLY_WHEAT = "HolyWheat";
         public const string ROTTEN_WHEAT = "DarkWheat";
     }
+
+    public struct SpatulaBoosterJump{
+        public const string SPATULA_JUMP = "IsSpatulaJumping";
+    }
 }

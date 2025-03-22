@@ -1,13 +1,11 @@
 using UnityEngine;
 
-public class HolyWheatColl : MonoBehaviour
+public class HolyWheatColl : MonoBehaviour, IColletible
 {
-    [Header("Holy Wheat Settings")]
+    [SerializeField] private WheatDesignOS wheatDesignOS;
     [SerializeField] private PlayerControl playerController;
-    [SerializeField] private float jumpForceIncrease;
-    [SerializeField] private float resetCoolDown;
     public void CollectWheat(){
-        playerController.SetJumpForce(jumpForceIncrease, resetCoolDown);
+        playerController.SetJumpForce(wheatDesignOS.IncreaseDecreaseMultiplier, wheatDesignOS.ResetBoostDuration);
         Destroy(gameObject);
     }
 }

@@ -175,5 +175,9 @@ public class PlayerControl : MonoBehaviour
         jumpForce = startJumpForce;
     }
 
+    public Rigidbody GetPlayerRigidbody(){
+        return playerrigidbody;
+    }
+
     #endregion
 }
