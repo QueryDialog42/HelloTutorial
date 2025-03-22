@@ -486,6 +486,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1258087807}
   - component: {fileID: 1258087810}
+  - component: {fileID: 1258087811}
+  - component: {fileID: 1258087812}
   - component: {fileID: 1258087809}
   - component: {fileID: 1258087808}
   m_Layer: 0
@@ -579,6 +581,8 @@ MonoBehaviour:
   movementKey: 113
   jumpKey: 32
   jumpForce: 5
+  airMultiplier: 0.2
+  airDrag: 0.75
   jumpCoolDown: 0.5
   playerHeight: 0.21
   groundLayer:
@@ -588,6 +592,31 @@ MonoBehaviour:
   slideKey: 101
   slideMultiplier: 2
   slideDrag: 2
+--- !u!114 &1258087811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258087806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29f0fe4028bacdc46a6da78a91f18a4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1258087812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258087806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd128dc13733d2046bfe17501d4cccad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 919132148399866978}
 --- !u!1 &1335250502
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +948,7 @@ Transform:
   m_GameObject: {fileID: 1459036421}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2038, y: 0.22060095, z: 0}
+  m_LocalPosition: {x: -0.0031, y: 0.0007, z: 0.0044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1830,7 +1859,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3571620133911336327}
   m_Layer: 0
-  m_Name: root
+  m_Name: Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1845,6 +1874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 543450652340412123}
+  - component: {fileID: 919132148399866978}
   m_Layer: 0
   m_Name: ChickVisual
   m_TagString: Untagged
@@ -1852,6 +1882,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &919132148399866978
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148399866977}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0f4d84c15e5637f459f5b80cd4203531, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &1706136846266821446
 Transform:
   m_ObjectHideFlags: 0
@@ -2149,8 +2201,8 @@ Transform:
   m_GameObject: {fileID: 7546622522627983337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2038, y: 0.22060095, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.0014, y: -0.0022, z: -0.0016}
+  m_LocalScale: {x: 1.0266795, y: 0.92929, z: 0.92929}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1706136846266821446}
