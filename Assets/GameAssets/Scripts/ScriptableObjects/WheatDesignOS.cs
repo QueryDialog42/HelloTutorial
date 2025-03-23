@@ -1,4 +1,3 @@
-using System.ComponentModel.Design;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "WheatDesignSO", menuName = "ScriptableObjects/WheatDesignSO")]

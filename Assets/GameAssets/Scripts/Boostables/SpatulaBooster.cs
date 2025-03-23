@@ -1,5 +1,5 @@
-using UnityEditor.ShortcutManagement;
 using UnityEngine;
+using SpatulaDesign;
 
 public class SpatulaBooster : MonoBehaviour, IBoostabel
 {
@@ -14,7 +14,7 @@ public class SpatulaBooster : MonoBehaviour, IBoostabel
         Rigidbody playerrigidbody = playerController.GetPlayerRigidbody();
 
         playerrigidbody.linearVelocity = new Vector3(playerrigidbody.linearVelocity.x, 0f, playerrigidbody.linearVelocity.z);
-        playerrigidbody.AddForce(transform.forward * spatulaDesignSO.ExtraJumpForce, ForceMode.Impulse);
+        playerrigidbody.AddForce(transform.forward * spatulaDesignSO.extraJumpForce, ForceMode.Impulse);
         isActive = true;
         Invoke(nameof(ResetActivition), 0.2f);
     }

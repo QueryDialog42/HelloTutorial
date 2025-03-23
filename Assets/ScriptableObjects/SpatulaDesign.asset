@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0768c983f30cc434dbd7b5f5c0fb522b, type: 3}
   m_Name: SpatulaDesign
   m_EditorClassIdentifier: 
-  extraJumpForce: 50
+  extraJumpForce: 40

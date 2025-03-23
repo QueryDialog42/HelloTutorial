@@ -1,8 +1,11 @@
 using UnityEngine;
-[CreateAssetMenu(fileName = "SpatulaDesignSO", menuName = "ScriptableObjects/SpatulaDesignSO")]
-public class SpatulaDesignSO : ScriptableObject
-{
-    [SerializeField] private float extraJumpForce;
 
-    public float ExtraJumpForce => extraJumpForce;
+namespace SpatulaDesign
+{
+    [CreateAssetMenu(fileName = "SpatulaDesignSO", menuName = "ScriptableObjects/SpatulaDesignSO")]
+    public class SpatulaDesignSO : ScriptableObject
+    {
+        [SerializeField] public float extraJumpForce;
+    }
 }
+

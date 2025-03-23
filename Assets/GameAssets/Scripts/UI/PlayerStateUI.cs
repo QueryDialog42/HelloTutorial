@@ -78,7 +78,7 @@ public class PlayerStateUI : MonoBehaviour
         passiveTransform.DOAnchorPosX(-90f, moveDuration).SetEase(moveEase);
     }
 
-    private IEnumerator SetBoosterUI(
+    private IEnumerator SetBoosterUI( // wrote IEnumerator for yield
         RectTransform activeTransform,
         Image boosterImage,
         Image wheatImage,
