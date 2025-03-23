@@ -12,6 +12,9 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.Instance.GetCurrentGameState != GameState.Play && GameManager.Instance.GetCurrentGameState != GameState.Resume){
+            return;
+        }
         Vector3 viewDirection = playerTransform.position - new Vector3(transform.position.x, playerTransform.position.y, transform.position.z);
         orientationTransform.forward = viewDirection.normalized;
 
