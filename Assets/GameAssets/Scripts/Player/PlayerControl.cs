@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerControl : MonoBehaviour
 {
     public event Action OnPlayerJump;
+    public event Action<PlayerState> OnPlayerStateChanged;
 
     [Header("References")]
     [SerializeField] private Transform orientation;
@@ -105,6 +106,7 @@ public class PlayerControl : MonoBehaviour
         };
         if(currentState != newState){
             stateController.ChangeState(newState);
+            OnPlayerStateChanged?.Invoke(newState);
         }
     }
 
