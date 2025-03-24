@@ -863,10 +863,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3f70791e1607834da1eaa7b159d9f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tryAgainButton: {fileID: 0}
-  mainMenuButton: {fileID: 0}
-  timerText: {fileID: 0}
-  timerUI: {fileID: 0}
+  tryAgainButton: {fileID: 1083361900}
+  mainMenuButton: {fileID: 106877590}
+  timerText: {fileID: 1647892778}
+  timerUI: {fileID: 19860591}
 --- !u!1 &159342012
 GameObject:
   m_ObjectHideFlags: 0
